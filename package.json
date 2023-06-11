@@ -2,6 +2,7 @@
   "name": "my-blog",
   "private": true,
   "version": "0.0.0",
+  "proxy": "http://localhost:8000/",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,6 +11,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^1.4.0",
+    "firebase": "^9.22.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.12.0"
