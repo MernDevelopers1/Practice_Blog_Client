@@ -1,6 +1,6 @@
 import { useState } from "react";
-import {getAuth, signInWithEmailAndPassword} from "firebase/auth";
 import { Link, useNavigate } from "react-router-dom";
+import {getAuth, signInWithEmailAndPassword} from "firebase/auth";
 
 const Login = () => {
     const [email,setEmail] = useState("");
@@ -23,10 +23,12 @@ const Login = () => {
       {error && <p className="error">{error}</p>}
       <input 
         value={email}
+        placeholder="Enter Your Email"
         onChange={(e)=>setEmail(e.target.value)}
         />
         <input 
         type="password"
+        placeholder="Enter Your Passoword"
         value={password}
         onChange={(e)=>setPassword(e.target.value)}
         />
